@@ -2,7 +2,45 @@
 
 /* body */
 
+body {
+  font-family: 'Inter Tight', sans-serif;
+  background-color: #1c1d20;
+  color: #fafafa;
+  margin:0;
+  padding:0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width:320px;
+  max-width: 375px;
+}
+
+@media screen and (min-width:768px){
+  .container{
+      padding: 0 32px;
+      max-width: 768px; 
+  }
+}
+@media screen and (min-width:1280px){
+  .container{
+      padding: 0 100px;
+      max-width: 1280px; 
+  }
+}
+
 /* Reset styles */
+
 h1,
 h2,
 h3,
