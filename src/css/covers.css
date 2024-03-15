@@ -1,0 +1,20 @@
+#convers h2 {
+  height: 135vw;
+  color: transparent;
+  background-image: url('../img/covers/сovers_375_508.png');
+  background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  #convers h2 {
+    background-image: url('../img/covers/сovers_768_960.png');
+    height: 125vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  #convers h2 {
+    background-image: url('../img/covers/сovers_1440_960.png');
+    height: 66vw;
+  }
+}
