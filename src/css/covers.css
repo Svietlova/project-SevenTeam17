@@ -1,4 +1,8 @@
+body {
+  max-width: 1440px;
+}
 #convers h2 {
+  max-height: 960px;
   height: 135vw;
   color: transparent;
   background-image: url('../img/covers/сovers_375_508.png');
