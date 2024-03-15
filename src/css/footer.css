@@ -88,6 +88,20 @@
 }
 
 .button-close-modal {
-    
+    fill: #fafafa;
+
 }
 >>>>>>> Stashed changes
+.modal {
+    background-color: #1c1d20;
+    height: 246px;
+    width: 492px;
+}
+
+.modal-text {
+    color: azure;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
