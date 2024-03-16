@@ -1,3 +1,16 @@
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -10,12 +23,11 @@ content {
 }
 
 .marquee {
-  right: -800px;
+  right: -600px;
   height: 135vw;
   background-color: #1c1d20;
-  /* color: transparent; */
-  background-image: url('../img/covers/ellipse_2@2x.png'),
-    url('../img/covers/ellipse_2@2x.png');
+  background-image: url('../img/covers/ellipse-2@2x.png'),
+    url('../img/covers/ellipse-2@2x.png');
   background-origin: center-box;
   background-position: -50vw -50vw, 50vw 50vw;
   background-repeat: no-repeat;
@@ -72,34 +84,43 @@ content {
 /* .reviews_list li img {
   min-width: 282.29px;
   height: auto;
-}
+} */
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  #convers h2 {
+  .marquee {
+    right: -2600px;
     height: 125vw;
     background-origin: center-box;
     background-position: -25vw -25vw, 50vw 50vw;
     background-size: 100vw 100vw, 100vw 100vw;
   }
+  .marquee__line {
+    width: 544px;
+  }
+}
 
-  .reviews_list li img {
+/* .reviews_list li img {
     min-width: 544px;
     height: auto;
     object-fit: contain;
   }
-}
+} */
 
 @media (min-width: 1440px) {
-  #convers h2 {
+  .marquee {
     max-height: 960px;
-    background-image: url('../img/covers/ellipse_2@2x.png'),
-      url('../img/covers/ellipse_2@2x.png'),
-      url('../img/covers/ellipse_2@2x.png');
+    background-image: url('../img/covers/ellipse-2@2x.png'),
+      url('../img/covers/ellipse-2@2x.png'),
+      url('../img/covers/ellipse-2@2x.png');
+    height: 66vw;
     background-origin: center-box;
     background-position: 20vw -15vw, -15vw 25vw, 65vw 30vw;
     background-size: 50vw 50vw, 50vw 50vw, 50vw 50vw;
   }
-} */
+  .marquee__line {
+    width: 544px;
+  }
+}
 
 /* .reviews_list {
   font-weight: 600;
