@@ -2,73 +2,18 @@ body {
   padding: 0;
   margin: 0;
 }
-#convers {
-  background-color: #1c1d20;
-  max-width: 1440px;
-}
 
-#convers h2 {
-  /* display: inline-block;
-  height: 357px;
-  width: 508px;
-  color: transparent; */
-  background-image: url('../img/covers/elements_vectors.png');
-  /* background-origin: content-box; */
-  /* background-size: auto auto; */
-}
-
-/* @media (min-width: 768px) and (max-width: 1439px) {
-  #convers h2 {
-    height: 357px;
-    width: 508px;
-  }
-}
-
-@media (min-width: 1440px) {
-  #convers h2 {
-    height: 960px;
-    width: 1440px;
-  }
-} */
-
-.reviews_list {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-  opacity: 0.4;
-  text-transform: uppercase;
-  padding-top: 64px;
-  padding-left: 16px;
-}
-
-.reviews_list li {
-  margin: 32px 24px 0px 24px;
-  font-family: 'Inter Tight', sans-serif; /* Set font family and fallback */
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: -0.02em; /* Consider using a positive value for tracking */
-  text-align: left;
-  text-transform: none;
-  opacity: 1;
-  border-color: #fafafa;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-#convers {
+content {
   background-color: #1c1d20;
   max-width: 1440px;
   width: 100vw;
 }
 
-#convers h2 {
+.marquee {
+  right: -800px;
   height: 135vw;
-  color: transparent;
+  background-color: #1c1d20;
+  /* color: transparent; */
   background-image: url('../img/covers/ellipse_2@2x.png'),
     url('../img/covers/ellipse_2@2x.png');
   background-origin: center-box;
@@ -77,12 +22,70 @@ body {
   background-size: 130vw 130vw, 130vw 130vw;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.content {
+  position: relative;
+}
+.marquee {
+  position: absolute;
+  height: 508px;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  display: flex;
+  transform: rotate(16deg);
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100px; */
+  /* height: auto; */
+  width: 282px;
+  /* width: calc(100% / 1.8); */
+  /* height: calc(100% / 3); */
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+/* .reviews_list li img {
+  min-width: 282.29px;
+  height: auto;
+}
+
 @media (min-width: 768px) and (max-width: 1439px) {
   #convers h2 {
     height: 125vw;
     background-origin: center-box;
     background-position: -25vw -25vw, 50vw 50vw;
     background-size: 100vw 100vw, 100vw 100vw;
+  }
+
+  .reviews_list li img {
+    min-width: 544px;
+    height: auto;
+    object-fit: contain;
   }
 }
 
@@ -96,9 +99,9 @@ body {
     background-position: 20vw -15vw, -15vw 25vw, 65vw 30vw;
     background-size: 50vw 50vw, 50vw 50vw, 50vw 50vw;
   }
-}
+} */
 
-.reviews_list {
+/* .reviews_list {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -112,13 +115,13 @@ body {
 
 .reviews_list li {
   margin: 32px 24px 0px 24px;
-  font-family: 'Inter Tight', sans-serif; /* Set font family and fallback */
+  font-family: 'Inter Tight', sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: -0.02em; /* Consider using a positive value for tracking */
+  letter-spacing: -0.02em;
   text-align: left;
   text-transform: none;
   opacity: 1;
   border-color: #fafafa;
-}
+} */
