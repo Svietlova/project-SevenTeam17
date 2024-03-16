@@ -2,7 +2,7 @@
 
     .hero {
 
-        background-image: url(../img/hero/Rectangle\ 1x\ mob.png);
+        background-image: url(../img/hero/hero-background@1xmob.png);
         background-size: cover;
         min-width: 374px;
 
@@ -11,7 +11,7 @@
     @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero/Rectangle\ 2x\ mob.png);
+            background-image: url(../img/hero/hero-background@2xmob.png);
             background-size: cover;
 
         }
@@ -84,7 +84,7 @@
 @media screen and (min-width: 375px) and (max-width:767px) {
     .hero {
 
-        background-image: url(../img/hero/Rectangle\ 1x\ mob.png);
+        background-image: url(../img/hero/hero-background@1xmob.png);
         background-size: cover;
 
     }
@@ -92,7 +92,7 @@
     @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero/Rectangle\ 2x\ mob.png);
+            background-image: url(../img/hero/hero-background@2xmob.png);
         }
 
     }
@@ -174,7 +174,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .hero {
 
-        background-image: url(../img/hero/Rectangle\ 1x\ tab.png);
+        background-image: url(../img/hero/hero-background@1xtab.png);
         background-size: cover;
 
     }
@@ -182,7 +182,7 @@
     @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero/Rectangle\ 2x\ tab.png);
+            background-image: url(../img/hero/hero-background@2xtab.png);
         }
 
     }
@@ -263,7 +263,7 @@
 @media screen and (min-width: 1279px) {
     .hero {
 
-        background-image: url(../img/hero/Rectangle\ 1x\ desc.png);
+        background-image: url(../img/hero/hero-background@1xdesc.png);
         background-size: cover;
 
     }
@@ -271,7 +271,7 @@
     @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero/Rectangle\ 2x\ desc.png);
+            background-image: url(../img/hero/hero-background@2xdesc.png);
         }
 
     }
