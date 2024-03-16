@@ -1,0 +1,143 @@
+
+.contaier-about-me {
+	display: flex;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: #1C1D20;
+	margin-top: 64px;
+}
+
+.v-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.description-about-me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.description-my-work {
+	display: flex;
+	padding: 100px 33px 204px 31px;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 24px;
+	background: #242527;
+	color: rgba(250, 250, 250, 0.40);
+	font-family: "Inter Tight";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.72px;
+	text-transform: uppercase;
+}
+
+.functional {
+	color: #ED3B44;
+}
+
+.websites {
+	color: #3B3B3B;
+}
+
+.photo-about-me {
+	border-radius: 24px;
+	height: 100%;
+	background: lightgray -188.547px -5.623px / 232.897% 106.525% no-repeat;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+	.contaier-about-me {
+		padding-left: 32px;
+		padding-right: 32px;
+		background-color: #1C1D20;
+		gap: 64px;
+	}
+
+	.description-my-work {
+		width: 576px;
+		display: flex;
+		padding: 64px 64px 436px 64px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 24px;
+		background: #242527;
+		flex-shrink: 0;
+		color: rgba(250, 250, 250, 0.40);
+		font-family: "Inter Tight";
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 40px;
+		letter-spacing: -1.14px;
+		text-transform: uppercase;
+	}
+
+	.photo-about-me {
+		width: 704px;
+		height: 700px;
+		background: lightgray -184.936px 0px / 149.13% 100% no-repeat;
+	}
+
+}
+
+@media screen and (min-width: 1280px) {
+	.contaier-about-me {
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 96px;
+		background-color: #1C1D20;
+	}
+
+
+	.description-about-me {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: row;
+		gap: 16px;
+	}
+
+	.description-my-work {
+		width: 552px;
+		display: flex;
+		padding: 64px 64px 436px 64px;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 24px;
+		background: #242527;
+		color: rgba(250, 250, 250, 0.40);
+		font-family: "Inter Tight";
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 40px;
+		letter-spacing: -1.14px;
+		text-transform: uppercase;
+
+	}
+
+
+
+
+	.photo-about-me {
+		width: 680px;
+		border-radius: 24px;
+		background: lightgray 50% / cover no-repeat;
+	}
+}
