@@ -1,25 +1,42 @@
 body {
-  max-width: 1440px;
+  padding: 0;
+  margin: 0;
 }
+#convers {
+  background-color: #1c1d20;
+  max-width: 1440px;
+  width: 100vw;
+}
+
 #convers h2 {
-  max-height: 960px;
   height: 135vw;
   color: transparent;
-  background-image: url('../img/covers/сovers_375_508.png');
-  background-size: cover;
+  background-image: url('../img/covers/ellipse_2@2x.png'),
+    url('../img/covers/ellipse_2@2x.png');
+  background-origin: center-box;
+  background-position: -50vw -50vw, 50vw 50vw;
+  background-repeat: no-repeat;
+  background-size: 130vw 130vw, 130vw 130vw;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   #convers h2 {
-    background-image: url('../img/covers/сovers_768_960.png');
     height: 125vw;
+    background-origin: center-box;
+    background-position: -25vw -25vw, 50vw 50vw;
+    background-size: 100vw 100vw, 100vw 100vw;
   }
 }
 
 @media (min-width: 1440px) {
   #convers h2 {
-    background-image: url('../img/covers/сovers_1440_960.png');
-    height: 66vw;
+    max-height: 960px;
+    background-image: url('../img/covers/ellipse_2@2x.png'),
+      url('../img/covers/ellipse_2@2x.png'),
+      url('../img/covers/ellipse_2@2x.png');
+    background-origin: center-box;
+    background-position: 20vw -15vw, -15vw 25vw, 65vw 30vw;
+    background-size: 50vw 50vw, 50vw 50vw, 50vw 50vw;
   }
 }
 
@@ -30,4 +47,20 @@ body {
   letter-spacing: -0.02em;
   color: #fafafa;
   opacity: 0.4;
+  text-transform: uppercase;
+  padding-top: 64px;
+  padding-left: 16px;
+}
+
+.reviews_list li {
+  margin: 32px 24px 0px 24px;
+  font-family: 'Inter Tight', sans-serif; /* Set font family and fallback */
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em; /* Consider using a positive value for tracking */
+  text-align: left;
+  text-transform: none;
+  opacity: 1;
+  border-color: #fafafa;
 }

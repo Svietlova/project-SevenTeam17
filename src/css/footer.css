@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   margin-top: 64px;
 }
 
@@ -73,7 +72,6 @@
   letter-spacing: -0.02em;
   border: none;
   color: #fafafa;
-
   margin-top: 16px;
 }
 
