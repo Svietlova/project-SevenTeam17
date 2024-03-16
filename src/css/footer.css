@@ -1,3 +1,8 @@
+.footer {
+  margin-left: 16px;
+  margin-top: 32px;
+}
+
 .footer-header {
   font-family: var(--font-family);
   font-weight: 500;
@@ -23,11 +28,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
-  margin-top: 63px;
+  margin-top: 64px;
 }
 
-.form-input {
+.footer-form-input {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -39,16 +43,21 @@
   color: #fafafa;
 }
 
-.form-input::placeholder {
+.footer-form-input::placeholder {
   padding-top: 20px;
   color: rgba(250, 250, 250, 0.6);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
 }
 
-.form-input:focus {
+.footer-form-input:focus {
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.form-input:active {
+.footer-form-input:active {
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
@@ -63,6 +72,7 @@
   letter-spacing: -0.02em;
   border: none;
   color: #fafafa;
+  margin-top: 16px;
 }
 
 .footer-contacts {
@@ -83,4 +93,90 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px;
+}
+
+.footer-li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  font-style: normal;
+}
+
+@media (min-width: 748px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 32px;
+    margin-top: 80px;
+    margin-bottom: 169px;
+  }
+
+  .footer-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 0;
+  }
+
+  .footer-form-input {
+    width: 245px;
+    height: 44px;
+    margin-top: 32px;
+  }
+
+  .footer-form-btn {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
+
+  .footer-header {
+    width: 542px;
+
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .footer-contacts {
+    margin-top: 72px;
+  }
+
+  .footer-li {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  .footer-li:nth-child(2) {
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    margin-left: 196px;
+  }
+
+  .footer-form-input {
+    width: 390px;
+  }
+
+  .footer-form-btn {
+    margin-left: 54px;
+  }
 }
