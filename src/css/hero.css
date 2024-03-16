@@ -340,11 +340,7 @@
 
     }
 
-    .social-link:hover {
-        border: 1px solid #fafafa;
-    }
-
-    .email:hover {
+    .network-item:hover {
         border: 1px solid #fafafa;
     }
 }
