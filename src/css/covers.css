@@ -5,6 +5,64 @@ body {
 #convers {
   background-color: #1c1d20;
   max-width: 1440px;
+}
+
+#convers h2 {
+  /* display: inline-block;
+  height: 357px;
+  width: 508px;
+  color: transparent; */
+  background-image: url('../img/covers/elements_vectors.png');
+  /* background-origin: content-box; */
+  /* background-size: auto auto; */
+}
+
+/* @media (min-width: 768px) and (max-width: 1439px) {
+  #convers h2 {
+    height: 357px;
+    width: 508px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #convers h2 {
+    height: 960px;
+    width: 1440px;
+  }
+} */
+
+.reviews_list {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  opacity: 0.4;
+  text-transform: uppercase;
+  padding-top: 64px;
+  padding-left: 16px;
+}
+
+.reviews_list li {
+  margin: 32px 24px 0px 24px;
+  font-family: 'Inter Tight', sans-serif; /* Set font family and fallback */
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em; /* Consider using a positive value for tracking */
+  text-align: left;
+  text-transform: none;
+  opacity: 1;
+  border-color: #fafafa;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+#convers {
+  background-color: #1c1d20;
+  max-width: 1440px;
   width: 100vw;
 }
 
