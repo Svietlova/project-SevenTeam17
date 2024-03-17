@@ -7,3 +7,7 @@ import '../src/js/faq';
 import '../src/js/covers';
 import '../src/js/reviews';
 import '../src/js/footer';
+
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
