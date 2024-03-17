@@ -79,7 +79,7 @@ const swiperBtnRight = document.querySelector('.projects_slider_btn--right');
 const swiperBtnLeft = document.querySelector('.projects_slider_btn--left');
 
 function enableBtn() {
-  for (let i = 0; i <= slides.length-1; i++) {
+  for (let i = 0; i <= slides.length - 1; i++) {
     if (slides[0].classList.contains('swiper-slide-active')) {
       swiperBtnLeft.classList.toggle("inActive");
       swiperBtnLeft.removeAttribute("disabled");
@@ -87,20 +87,20 @@ function enableBtn() {
     }
     if (slides[2].classList.contains('swiper-slide-next')) {
       swiperBtnRight.classList.toggle("inActive");
-      swiperBtnRight.setAttribute("disabled","true");
+      swiperBtnRight.setAttribute("disabled", "true");
     }
-    
+
   }
 }
 function disableBtn() {
   if (slides[2].classList.contains('swiper-slide-active')) {
     swiperBtnRight.classList.toggle("inActive");
     swiperBtnRight.removeAttribute("disabled");
-    }
-    if (slides[0].classList.contains('swiper-slide-prev')) {
-      swiperBtnLeft.classList.toggle("inActive");
-      swiperBtnLeft.setAttribute("disbled", "true");
-    }
+  }
+  if (slides[0].classList.contains('swiper-slide-prev')) {
+    swiperBtnLeft.classList.toggle("inActive");
+    swiperBtnLeft.setAttribute("disbled", "true");
+  }
 }
 
 
