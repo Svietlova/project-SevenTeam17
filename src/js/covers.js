@@ -10,14 +10,14 @@ let contentImg = `<div class="marquee__inner">`;
         const randomNum = Math.floor(Math.random() * 10);
         const imgElement = `<img
     class="marquee__line"
-    srcset="../img/covers/rectangle-${randomNum + 1}@2x.jpg 2x"
-    src="../img/covers/rectangle-${randomNum + 1}.jpg"
+    srcset="./img/covers/rectangle-${randomNum + 1}@2x.jpg 2x"
+    src="./img/covers/rectangle-${randomNum + 1}.jpg"
     alt="${contentAlt[randomNum]}"
     loading="lazy"
   />`;
         contentImg += imgElement;
     }
-    
+
     contentImg += `</div>`
     console.log(contentImg);
     return contentImg;
