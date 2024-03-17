@@ -17,6 +17,7 @@ let contentImg = `<div class="marquee__inner">`;
   />`;
         contentImg += imgElement;
     }
+    
     contentImg += `</div>`
     console.log(contentImg);
     return contentImg;
