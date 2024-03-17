@@ -11,7 +11,7 @@
 //         const randomNum = Math.floor(Math.random() * 10);
 //         const imgElement = `<img
 //     class="marquee__line"
-//     srcset="./img/covers/c 2x"
+//     srcset="./img/covers/crectangle-${randomNum + 1}@2x 2x"
 //     src="./img/covers/rectangle-${randomNum + 1}.jpg"
 //     alt="${contentAlt[randomNum]}"
 //     loading="lazy"
