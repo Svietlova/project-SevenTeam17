@@ -1,7 +1,7 @@
 import{S as a}from"./assets/vendor-0cdf484e.js";(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const c of o.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&s(c)}).observe(document,{childList:!0,subtree:!0});function n(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerPolicy&&(o.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?o.credentials="include":e.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function s(e){if(e.ep)return;e.ep=!0;const o=n(e);fetch(e.href,o)}})();console.log("header");console.log("hero");console.log("about-me");console.log("benefits");console.log("projects");const d=document.querySelector(".projects_slider_btn--right"),u=document.querySelector(".projects_slider_btn--left"),l=new a(".swiper",{speed:400,spaceBetween:100});d.addEventListener("click",()=>{l.slideNext()});u.addEventListener("click",()=>{l.slidePrev()});console.log("faq");const g=document.querySelector(".content");let f=["A brand what is inspired","Transform your body","MIMINO","Manage your finance","Welcome to our collection","Reviving the traditional Ukraine","Organic vegetables","Get body in shape","Fresh harvest box","Discover the joy of learning"],i="";function m(){let t='<div class="marquee__inner">';for(let r=0;r<10;r++){const n=Math.floor(Math.random()*10),s=`<img
     class="marquee__line"
-    srcset="../img/covers/rectangle-${n+1}@2x.jpg 2x"
-    src="../img/covers/rectangle-${n+1}.jpg"
+    srcset="./img/covers/rectangle-${n+1}@2x.jpg 2x"
+    src="./img/covers/rectangle-${n+1}.jpg"
     alt="${f[n]}"
     loading="lazy"
   />`;t+=s}return t+="</div>",console.log(t),t}for(let t=0;t<5;t++)i+=m();console.log(i);g.innerHTML=i;console.log("work together");
