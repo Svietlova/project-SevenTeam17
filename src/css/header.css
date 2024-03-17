@@ -23,7 +23,7 @@
 }
 
 .header-nav {
-    background-color: var(--primary-black-color);
+    background-color: #1c1d20;
     display: flex;
     padding: 17px 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -51,7 +51,7 @@
 }
 
 .header-logo-icon {
-    fill: var(--primary-white-color);
+    fill: #fafafa;
 }
 
 @media only screen and (min-width: 375px) {
@@ -84,45 +84,18 @@
 }
 
 .header-item {
-    color: var(--primary-white-color);
+    color: #fafafa;
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
-    transition: color var(--hover-animation-fast);
+    /* text-transform: uppercase;
+    transition: color var(--hover-animation-fast); */
 }
 
 .header-item:hover,
 .header-item:focus {
-    color: var(--brown-color);
-}
-
-.header-camera-link {
-    display: flex;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    background-color: #1d1d1d;
-    margin-right: 14px;
-}
-
-.header-camera {
-    fill: var(--defaul-camera-color);
-    transition: fill var(--hover-animation-fast);
-}
-
-.header-camera:hover,
-.header-camera:focus {
-    fill: var(--brown-color);
-}
-
-@media only screen and (min-width: 768px) {
-    .header-camera-link {
-        display: none;
-    }
+    color: #fafafa;
 }
 
 .header-burger {
@@ -138,7 +111,7 @@
 }
 
 .header-burger-icon {
-    stroke: var(--primary-white-color);
+    stroke: #fafafa;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -147,42 +120,6 @@
     }
 }
 
-.sign-link {
-    display: inline-flex;
-    padding: 16px 58px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    background-color: var(--primary-white-color);
-
-    color: var(--primary-black-color);
-    font-family: DM Sans;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.55;
-    /* 155.556% */
-    text-transform: uppercase;
-    transition: color var(--hover-animation-fast),
-        background-color var(--hover-animation-fast);
-}
-
-@media only screen and (min-width: 1280px) {
-    .sign-link {
-        padding: 16px 84px;
-    }
-}
-
-@media only screen and (max-width: 767.98px) {
-    .sign-link {
-        display: none;
-    }
-}
-
-.sign-link:hover,
-.sign-link:focus {
-    background-color: var(--secondary-black-color);
-    color: var(--brown-color);
-}
 
 /**
      |============================
@@ -269,7 +206,7 @@
 
 .mobile-menu .link {
     display: block;
-    color: var(--primary-black-color);
+    color: #1c1d20;
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 400;
@@ -281,8 +218,8 @@
     font-weight: 700;
 }
 
-.mobile-closw {
-    stroke: var(--primary-black-color);
+.mobile-close {
+    stroke: #1c1d20;
 }
 
 .mobile-item:not(:last-child) {
