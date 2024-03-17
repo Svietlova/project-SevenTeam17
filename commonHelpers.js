@@ -4,5 +4,5 @@ import{S as a}from"./assets/vendor-0cdf484e.js";(function(){const r=document.cre
     src="../img/covers/rectangle-${n+1}.jpg"
     alt="${f[n]}"
     loading="lazy"
-  />`;t+=s}return t+="</div>",console.log(t),t}for(let t=0;t<3;t++)i+=m();console.log(i);g.innerHTML=i;console.log("work together");
+  />`;t+=s}return t+="</div>",console.log(t),t}for(let t=0;t<5;t++)i+=m();console.log(i);g.innerHTML=i;console.log("work together");
 //# sourceMappingURL=commonHelpers.js.map
