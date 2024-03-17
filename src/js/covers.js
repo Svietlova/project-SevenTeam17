@@ -22,7 +22,7 @@ let contentImg = `<div class="marquee__inner">`;
     return contentImg;
 }
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 5; i++) {
   allContentImg += addContentImg();
 }
 
