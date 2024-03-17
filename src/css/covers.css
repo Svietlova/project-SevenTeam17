@@ -17,14 +17,14 @@ body {
 }
 
 content {
-  background-color: #1c1d20;
   max-width: 1440px;
   width: 100vw;
+  overflow: hidden;
 }
 
-.marquee {
-  right: -600px;
-  height: 135vw;
+.content {
+  right: 0px;
+  height: 508px;
   background-color: #1c1d20;
   background-image: url('../img/covers/ellipse-2@2x.png'),
     url('../img/covers/ellipse-2@2x.png');
@@ -40,6 +40,7 @@ content {
   box-sizing: border-box;
 }
 .content {
+  overflow: hidden;
   position: relative;
 }
 .marquee {
@@ -87,9 +88,9 @@ content {
 } */
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  .marquee {
-    right: -2600px;
-    height: 125vw;
+  .content {
+    right: 0px;
+    height: 960px;
     background-origin: center-box;
     background-position: -25vw -25vw, 50vw 50vw;
     background-size: 100vw 100vw, 100vw 100vw;
@@ -107,7 +108,7 @@ content {
 } */
 
 @media (min-width: 1440px) {
-  .marquee {
+  .content {
     max-height: 960px;
     background-image: url('../img/covers/ellipse-2@2x.png'),
       url('../img/covers/ellipse-2@2x.png'),
