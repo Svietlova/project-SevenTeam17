@@ -8,7 +8,7 @@ const btnNext = document.querySelector('.projects_slider_btn--right');
 const btnPrev = document.querySelector('.projects_slider_btn--left');
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.projects_image_box', {
   speed: 400,
   spaceBetween: 100,
 });
@@ -31,13 +31,13 @@ const projectsImg = `
     <img
       class="projects_image" 
       srcset="
-        ../img/projects/image1.11px.png  292w,
-        ../img/projects/image1.12px.png  584w,
-        ../img/projects/image1.21px.png  528w,
-        ../img/projects/image1.22px.png 1056w
+        ./img/projects/image1.11px.png  292w,
+        ./img/projects/image1.12px.png  584w,
+        ./img/projects/image1.21px.png  528w,
+        ./img/projects/image1.22px.png 1056w
       "
       sizes="(min-width: 1280px) 580px, (min-width: 768px) 580px, 320px"
-      src="../img/projects/image1.11px.png"
+      src="./img/projects/image1.11px.png"
       alt="Read Jorney App"
     />
   </div>
@@ -45,13 +45,13 @@ const projectsImg = `
     <img
       class="projects_image" 
       srcset="
-        ../img/projects/image2.11px.png  292w,
-        ../img/projects/image2.12px.png  584w,
-        ../img/projects/image2.21px.png  528w,
-        ../img/projects/image2.22px.png 1056w
+        ./img/projects/image2.11px.png  292w,
+        ./img/projects/image2.12px.png  584w,
+        ./img/projects/image2.21px.png  528w,
+        ./img/projects/image2.22px.png 1056w
       "
       sizes="(min-width: 1280px) 580px, (min-width: 768px) 580px, 320px"
-      src="../img/projects/image2.11px.png"
+      src="./img/projects/image2.11px.png"
       alt="Read Jorney App"
     />
   </div>
@@ -59,13 +59,13 @@ const projectsImg = `
     <img
       class="projects_image" 
       srcset="
-        ../img/projects/image3.11px.png  292w,
-        ../img/projects/image3.12px.png  584w,
-        ../img/projects/image3.21px.png  528w,
-        ../img/projects/image3.22px.png 1056w
+        ./img/projects/image3.11px.png  292w,
+        ./img/projects/image3.12px.png  584w,
+        ./img/projects/image3.21px.png  528w,
+        ./img/projects/image3.22px.png 1056w
       "
       sizes="(min-width: 1280px) 580px, (min-width: 768px) 580px, 320px"
-      src="../img/projects/image3.11px.png"
+      src="./img/projects/image3.11px.png"
       alt="Read Jorney App"
     />
   </div>`

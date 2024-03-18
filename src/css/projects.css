@@ -101,12 +101,8 @@
     min-width: 50%;
   }
 }
-.swiper-wrapper {
-  @media (min-width: 1440px) {
-  }
-}
 
-img {
+.projects_image {
   display: inline;
   @media (min-width: 1440px) {
     max-width: 614px;
