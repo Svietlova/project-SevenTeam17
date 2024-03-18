@@ -5,5 +5,6 @@ import '../src/js/benefits';
 import '../src/js/projects';
 import '../src/js/faq';
 import '../src/js/covers';
+
 // import '../src/js/reviews';
 import '../src/js/footer';
