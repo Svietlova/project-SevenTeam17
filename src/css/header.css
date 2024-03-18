@@ -1,7 +1,9 @@
 .header {
     position: absolute;
+    
     display: flex;
     justify-content: flex-end;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -20,36 +22,40 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 .header-nav {
     background-color: transparent;
     display: flex;
-    padding: 17px 20px;
-    border: none;
-    border-radius: 12px;
-    justify-content: center;
-    align-items: center;
+    margin: 32px 16px 0 16px;
+    min-width: 343px;
+    justify-content: space-between;
+    align-items:flex-start;
 }
 
 @media only screen and (min-width: 768px) {
     .header-nav {
-        padding: 22px 20px;
-        margin-right: 12px;
+        /* padding: 22px 20px; */
+        /* margin-right: 12px; */
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .header-nav {
-        padding: 22px 50px;
-        margin-right: 20px;
+        /* padding: 22px 50px;
+        margin-right: 20px; */
     }
 }
 
 .header-logo {
-    margin-right: 40px;
+    display: flex;
+    /* margin-right: 40px; */
 }
 
+.header-logo-img {
+
+}
 .header-logo-icon {
     fill: #fafafa;
     width: 84px;
@@ -58,7 +64,7 @@
 
 @media only screen and (min-width: 375px) {
     .header-logo {
-        margin-right: 94px;
+        /* margin-right: 94px; */
     }
 }
 
@@ -88,13 +94,15 @@
 .header-item {
     color: #fafafa;
     font-family: 'Inter Tight';
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     line-height: normal;
-    /* text-transform: uppercase;
-    transition: color var(--hover-animation-fast); */
+    /* transition: color var(--hover-animation-fast); */ 
 }
-
+.header-item.current {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
 .header-item:hover,
 .header-item:focus {
     color: #fafafa;
@@ -217,7 +225,8 @@
 }
 
 .link.current {
-    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
 }
 
 .mobile-close {
@@ -226,8 +235,4 @@
 
 .mobile-item:not(:last-child) {
     margin-bottom: 28px;
-}
-
-.mobile-img {
-    object-fit: cover;
 }
