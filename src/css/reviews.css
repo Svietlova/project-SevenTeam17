@@ -1,120 +1,121 @@
-/* .reviews-page {
-    padding: 2rem 0;
+.container {
+  overflow: hidden;
+}
+
+.reviews-page {
+  padding: 2rem 0;
+}
+
+.reviews-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fafafa66;
+  margin-bottom: 2rem;
+}
+
+.reviews-list {
+  margin-bottom: 2rem;
+}
+
+.reviews-list-item {
+  width: 343px;
+  height: 302px;
+  max-height: 302px;
+  min-height: 302px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #fafafa33;
+  border-radius: 20px;
+}
+
+.reviews-item-img {
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.reviews-item-title {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.reviews-item-text {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa99;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical;
+}
+
+.reviews-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reviews-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fafafa80;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #1c1d20;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-icon {
+  fill: transparent;
+  stroke: #fafafa99;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-btn:disabled {
+  border: 1px solid #fafafa33;
+  cursor: no-drop;
+}
+
+.reviews-btn:disabled .btn-icon {
+  stroke: #fafafa33;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-page {
+    padding: 3rem 0;
   }
-  
-  .reviews-title {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: #fafafa66;
-    margin-bottom: 2rem;
-  }
-  
-  .reviews-list {
-    margin-bottom: 2rem;
-  }
-  
   .reviews-list-item {
-    width: 343px;
-    height: 302px;
-    max-height: 302px;
-    min-height: 302px;
-    padding: 2rem 1.5rem;
-    border: 1px solid #fafafa33;
-    border-radius: 20px;
+    max-width: 344px;
   }
-   
-  .reviews-item-img {
-    border-radius: 10px;
-    margin-bottom: 2rem;
-  }
-  
-  .reviews-item-title {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    margin-bottom: 8px;
-  }
-  
-  .reviews-item-text {
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    color: #fafafa99;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    -webkit-box-orient: vertical;
-  }
-  
-  .reviews-btn-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
+
   .reviews-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #fafafa80;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    background-color: #1c1d20;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 66px;
+    height: 66px;
   }
 
   .btn-icon {
-    fill: transparent;
-    stroke: #fafafa99;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 2rem;
+    height: 2rem;
   }
+}
 
-  .reviews-btn:disabled {
-    border: 1px solid #fafafa33;
-    cursor: no-drop;
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
   }
-  
-  .reviews-btn:disabled .btn-icon {
-    stroke: #fafafa33;
+  .reviews-page {
+    padding: 5.125rem 0;
   }
-  
-  @media screen and (min-width: 768px) {
-    .reviews-page {
-        padding: 3rem 0;
-      }
-    .reviews-list-item {
-        max-width: 344px;
-      }
-      
-    .reviews-btn {
-      width: 66px;
-      height: 66px;
-    }
-    
-    .btn-icon {
-        width: 2rem;
-        height: 2rem;
-      }
-
+  .reviews-btn {
+    width: 68px;
+    height: 68px;
   }
-  
-  @media screen and (min-width: 1440px) {
-    .container {
-        width: 1440px;
-      }
-    .reviews-page {
-        padding: 5.125rem 0;
-      }
-    .reviews-btn {
-      width: 68px;
-      height: 68px;
-    }
-  }
-  
- */
+}

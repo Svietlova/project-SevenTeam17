@@ -16,6 +16,9 @@ body {
   margin: 0;
 }
 
+.container {
+  padding: 0px;
+}
 content {
   max-width: 1440px;
   width: 100vw;

@@ -1,5 +1,8 @@
 console.log("header");
 
+import imgLogo from '../img/header-footer/jeff-logo.png';
+import sprite from '../img/sprite.svg';
+  
 (() => {
     const mobileMenu = document.querySelector('.js-menu-container');
     const openMenuBtn = document.querySelector('.js-open-menu');

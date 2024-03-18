@@ -3,12 +3,27 @@ console.log("projects");
 import Swiper from 'swiper';
 import '../../node_modules/swiper/swiper.css';
 
+import p111 from '../img/projects/image1.11px.png'
+import p112 from '../img/projects/image1.12px.png'
+import p121 from '../img/projects/image1.21px.png'
+import p122 from '../img/projects/image1.22px.png'
+
+import p211 from '../img/projects/image2.11px.png'
+import p212 from '../img/projects/image2.12px.png'
+import p221 from '../img/projects/image2.21px.png'
+import p222 from '../img/projects/image2.22px.png'
+
+import p311 from '../img/projects/image3.11px.png'
+import p312 from '../img/projects/image3.12px.png'
+import p321 from '../img/projects/image3.21px.png'
+import p322 from '../img/projects/image3.22px.png'
+
 
 const btnNext = document.querySelector('.projects_slider_btn--right');
 const btnPrev = document.querySelector('.projects_slider_btn--left');
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.projects_image_box', {
   speed: 400,
   spaceBetween: 100,
 });
@@ -31,42 +46,42 @@ const projectsImg = `
     <img
       class="projects_image" 
       srcset="
-        ../img/projects/image1.11px.png  292w,
-        ../img/projects/image1.12px.png  584w,
-        ../img/projects/image1.21px.png  528w,
-        ../img/projects/image1.22px.png 1056w
+        ${p111}  292w,
+        ${p112}  584w,
+        ${p121}  528w,
+        ${p122}  1056w
       "
       sizes="(min-width: 1280px) 580px, (min-width: 768px) 580px, 320px"
-      src="../img/projects/image1.11px.png"
+      src="${p121}"
       alt="Read Jorney App"
     />
   </div>
-  <div class="swiper-slide" id=2>
-    <img
-      class="projects_image" 
-      srcset="
-        ../img/projects/image2.11px.png  292w,
-        ../img/projects/image2.12px.png  584w,
-        ../img/projects/image2.21px.png  528w,
-        ../img/projects/image2.22px.png 1056w
-      "
-      sizes="(min-width: 1280px) 580px, (min-width: 768px) 580px, 320px"
-      src="../img/projects/image2.11px.png"
-      alt="Read Jorney App"
-    />
-  </div>
+  <div class="swiper-slide" id="2">
+          <img
+            class="projects_image"
+            srcset="
+              ${p211}  292w,
+              ${p212}  584w,
+              ${p221}  528w,
+              ${p222}  1056w
+            "
+            sizes="(min-width: 1280px) 580px, (min-width: 768px) 580px, 320px"
+            src="${p221}"
+            alt="Pet Love App"
+          />
+        </div>
   <div class="swiper-slide" id=3>
     <img
       class="projects_image" 
       srcset="
-        ../img/projects/image3.11px.png  292w,
-        ../img/projects/image3.12px.png  584w,
-        ../img/projects/image3.21px.png  528w,
-        ../img/projects/image3.22px.png 1056w
+        ${p311}  292w,
+        ${p312}  584w,
+        ${p321}  528w,
+        ${p322}  1056w
       "
       sizes="(min-width: 1280px) 580px, (min-width: 768px) 580px, 320px"
-      src="../img/projects/image3.11px.png"
-      alt="Read Jorney App"
+      src="${p321}"
+      alt="Vocab Builder App"
     />
   </div>`
 
