@@ -1,18 +1,18 @@
 .header {
+    position: absolute;
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    justify-content: flex-end;
 }
 
 @media only screen and (min-width: 768px) {
     .header {
-        padding-bottom: 40px;
+        /* padding-bottom: 40px; */
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .header {
-        padding-bottom: 80px;
+        /* padding-bottom: 80px; */
     }
 }
 
