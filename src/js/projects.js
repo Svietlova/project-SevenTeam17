@@ -8,7 +8,7 @@ const btnNext = document.querySelector('.projects_slider_btn--right');
 const btnPrev = document.querySelector('.projects_slider_btn--left');
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.projects_image_box', {
   speed: 400,
   spaceBetween: 100,
 });
