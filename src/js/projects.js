@@ -81,7 +81,7 @@ const projectsImg = `
       "
       sizes="(min-width: 1280px) 580px, (min-width: 768px) 580px, 320px"
       src="${p321}"
-      alt="Read Jorney App"
+      alt="Vocab Builder App"
     />
   </div>`
 
