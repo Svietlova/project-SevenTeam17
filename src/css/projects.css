@@ -11,10 +11,17 @@
   border-radius: 24px;
   overflow: hidden;
   margin-bottom: 32px;
+  margin-right: 16px;
+  margin-left: 16px;
+
   @media (min-width: 768px) {
     margin-bottom: 64px;
+    margin-right: 32px;
+    margin-left: 32px;
   }
   @media (min-width: 1440px) {
+    margin-left: 32px;
+    margin-right: 32px;
     display: flex;
   }
 }
@@ -81,6 +88,7 @@
   border-radius: 60px;
   border-style: none;
   background-color: rgba(237, 59, 68, 1);
+
   @media (min-width: 768px) {
     padding: 18px 50px;
   }
@@ -92,6 +100,7 @@
   background: rgba(36, 37, 39, 1);
   text-align: center;
   overflow: hidden;
+
   @media (min-width: 768px) {
     padding: 120px 45px;
   }
