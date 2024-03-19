@@ -4,8 +4,9 @@
 
         background-image: url(../img/hero/hero-background@1xmob.png);
         background-size: cover;
-
+        min-width: 374px;
         max-width: 375px;
+        padding: 0 16px;
 
     }
 
@@ -20,12 +21,12 @@
     }
 
     .hero-container {
+
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-width: 300px;
-        padding-left: 16px;
-        padding-right: 16px;
+        max-width: 374px;
+
     }
 
     .hero-title-container {
@@ -33,7 +34,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 16px;
         margin-top: 281px;
         margin-bottom: 212px;
 
@@ -90,11 +90,12 @@
 }
 
 
-@media screen and (min-width: 375px) and (max-width:767px) {
+@media screen and (min-width: 375px) {
     .hero {
 
         background-image: url(../img/hero/hero-background@1xmob.png);
         background-size: cover;
+        padding: 0 16px;
 
     }
 
@@ -131,7 +132,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 16px;
         margin-top: 281px;
         margin-bottom: 212px;
 
@@ -173,7 +173,7 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
     .hero {
 
         background-image: url(../img/hero/hero-background@1xtab.png);
@@ -194,6 +194,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0 32px;
 
     }
 
@@ -232,7 +233,7 @@
 
     .network-list {
         display: flex;
-        gap: 4px;
+        gap: 8px;
 
 
     }
