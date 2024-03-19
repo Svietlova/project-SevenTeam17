@@ -1,28 +1,34 @@
 .header {
-    position: absolute;
-    
+    position: relative;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
     .header {
-        /* padding-bottom: 40px; */
+        
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .header {
-        /* padding-bottom: 80px; */
+        
     }
 }
 
 .header-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding: 0;
+
+    transform: translate(-50%, 0);
 }
 
 .header-nav {
@@ -85,7 +91,7 @@
     gap: 28px;
 }
 
-@media only screen and (max-width: 1439.98px) {
+@media only screen and (max-width: 759.98px) {
     .header-list {
         display: none;
     }
@@ -186,7 +192,7 @@
     height: 100vh;
     background-image: url(../img/hero/hero-background@1xmob.png);
         background-size: cover;
-        min-width: 374px;
+        min-width: 320px;
     z-index: 999;
 
     transform: translateX(100%);
@@ -195,6 +201,8 @@
 
 .menu-container.is-open {
     transform: translateX(0);
+    display: flex;
+    align-items: center;
 }
 
 .menu-container .menu-toggle {
@@ -208,9 +216,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     padding-top: 302px;
     margin-bottom: auto;
+    min-width: 320px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -227,17 +235,21 @@
         font-size: 16px;
         font-weight: 500;
     line-height: normal;
-}
-
-.link.current {
     text-decoration: underline;
-    text-decoration-skip-ink: none;
+        text-decoration-skip-ink: none;
 }
-
-/* .mobile-close {
-    stroke: #1c1d20;
-} */
 
 .mobile-item:not(:last-child) {
-    margin-bottom: 28px;
+    margin-bottom: 12px;
+}
+
+.header-order-btn{
+    color: rgba(250, 250, 250, 1);
+    padding: 14px 31px;
+    border-radius: 60px;
+    border-style: none;
+    background-color: rgba(237, 59, 68, 1);
+    width: 164px;
+    height: 45px;
+    margin-bottom: 64px;
 }
