@@ -12,7 +12,8 @@
             <use href="./img/sprite.svg#icon-jefferson"></use>
           </svg>
         </a>
-        <ul class="header-list">
+        <h3 class="menu-title">Menu</h3>
+        <!-- <ul class="header-list">
           <li class="header-item">
             <a href="#about-me">About me</a>
           </li>
@@ -25,10 +26,10 @@
           <li class="header-item">
             <a href="#faq">FAQ</a>
           </li>
-        </ul>
+        </ul> -->
 
         <button
-          class="header-burger js-open-menu"
+          class="header-burger js-open-menu menu-toggle"
           type="button"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -36,6 +37,10 @@
           <svg class="header-burger-icon" width="28" height="28">
             <use href="./img/sprite.svg#icon-menu"></use>
           </svg>
+        </button>
+
+        <button type="button" class="header-order-btn-td">
+          <a href="#work-with-me" class="link">Order the project</a>
         </button>
       </nav>
     </div>
@@ -49,7 +54,7 @@
     </button>
 
     <ul class="mobile-menu">
-      <li class="mobile-item link current">
+      <li class="mobile-item link">
         <a href="#about-me">About me</a>
       </li>
       <li class="mobile-item link">
@@ -64,7 +69,7 @@
     </ul>
 
     <button type="button" class="header-order-btn">
-      <a href="#work-with-me" class="link">Order the project</a>
+      <a href="#work-with-me">Order the project</a>
     </button>
   </div>
 </section>
