@@ -266,6 +266,7 @@
   .description-my-work {
     display: flex;
     width: 704px;
+    height: 700px;
     padding: 64px 64px 436px 64px;
     justify-content: center;
     align-items: center;
