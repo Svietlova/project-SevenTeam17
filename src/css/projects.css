@@ -87,6 +87,10 @@
     padding: 18px 50px;
   }
 }
+.projects_description_btn:hover,
+.projects_description_btn:focus {
+  background: rgba(224, 55, 63, 1);
+}
 
 .swiper.projects_image_box {
   box-sizing: border-box;
