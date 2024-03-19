@@ -1,6 +1,6 @@
-.about-me-acc-sec {
-  /* cursor: pointer; */
-}
+/* .about-me-acc-sec {
+  cursor: pointer;
+} */
 
 /* ----------------------------------old style------------------------ */
 .container-about-me {
@@ -10,8 +10,7 @@
   align-items: center;
   gap: 32px;
   opacity: 0.9;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -36,7 +35,6 @@
 }
 
 .description-my-work {
-  /* width: 279px; */
   display: flex;
   padding: 32px 32px 272px 32px;
   flex-direction: column;
@@ -255,9 +253,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0;
-    padding-left: 32px;
-    padding-right: 32px;
+    margin: 0 auto;
   }
 
   .description-about-me {
@@ -268,8 +264,8 @@
   }
 
   .description-my-work {
-    /* width: 704px; */
     display: flex;
+    width: 704px;
     padding: 64px 64px 436px 64px;
     justify-content: center;
     align-items: center;
@@ -493,7 +489,6 @@
 @media screen and (min-width: 1440px) {
   .container-about-me {
     max-width: 1376px;
-    /* margin: 0 auto; */
     padding-top: 96px;
     padding-bottom: 96px;
   }
