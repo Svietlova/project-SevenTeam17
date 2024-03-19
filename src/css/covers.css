@@ -11,18 +11,14 @@
   overflow: hidden;
 }
 
-body {
+/* body {
   padding: 0;
   margin: 0;
-}
+} */
 
-.container {
+.container-covers {
   padding: 0px;
-}
-content {
-  max-width: 1440px;
-  width: 100vw;
-  overflow: hidden;
+  margin-top: 64px;
 }
 
 .content {
@@ -85,6 +81,10 @@ content {
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
+  .container-covers {
+    margin-top: 96px;
+  }
+
   .content {
     right: 0px;
     height: 960px;
@@ -100,6 +100,10 @@ content {
 }
 
 @media (min-width: 1440px) {
+  .container-covers {
+    margin-top: 164px;
+  }
+
   .content {
     max-height: 960px;
     background-image: url('../img/covers/ellipse-2@2x.png'),
