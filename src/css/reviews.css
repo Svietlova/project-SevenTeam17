@@ -1,7 +1,7 @@
-.container {
+.reviews-pagecontainer {
+  margin-top: 64px;
   overflow: hidden;
 }
-
 .reviews-page {
   padding: 2rem 0;
 }
@@ -89,6 +89,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .reviews-pagecontainer {
+    margin-top: 96px;
+  }
+
   .reviews-page {
     padding: 3rem 0;
   }
@@ -108,9 +112,12 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
+  .reviews-pagecontainer {
+    margin-top: 164px;
   }
+  /* .container {
+    width: 1440px;
+  } */
   .reviews-page {
     padding: 5.125rem 0;
   }
