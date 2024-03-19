@@ -20,12 +20,12 @@
     }
 
     .hero-container {
-
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 374px;
-
+        min-width: 300px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .hero-title-container {
