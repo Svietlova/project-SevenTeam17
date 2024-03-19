@@ -39,7 +39,13 @@
     justify-content: space-between;
     align-items:flex-start;
 }
-
+@media only screen and (max-width: 374px) {
+    .header-nav {
+        min-width: 300px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
 @media only screen and (min-width: 768px) {
     .header-nav {
         /* padding: 22px 20px; */
