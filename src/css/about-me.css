@@ -3,11 +3,11 @@
 }
 
 /* ----------------------------------old style------------------------ */
-.contaier-about-me {
+.container-about-me {
   max-width: 343px;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
   opacity: 0.9;
   padding-left: 16px;
@@ -31,7 +31,7 @@
 .description-about-me {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
 }
 
@@ -250,7 +250,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contaier-about-me {
+  .container-about-me {
     max-width: 736px;
     display: flex;
     flex-direction: column;
@@ -262,7 +262,7 @@
   .description-about-me {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
   }
 
@@ -489,7 +489,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .contaier-about-me {
+  .container-about-me {
     max-width: 1376px;
     padding-top: 96px;
     padding-bottom: 96px;
