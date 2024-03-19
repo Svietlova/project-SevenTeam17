@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/project-SevenTeam17/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-SevenTeam17/assets/vendor-558913cf.js">
     <link rel="stylesheet" href="/project-SevenTeam17/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/project-SevenTeam17/assets/index-32a811fa.css">
+    <link rel="stylesheet" href="/project-SevenTeam17/assets/index-9a91d305.css">
   </head>
   <body>
     <section>
@@ -33,7 +33,8 @@
             <use href="/project-SevenTeam17/assets/sprite-9e15d144.svg#icon-jefferson"></use>
           </svg>
         </a>
-        <ul class="header-list">
+        <h3 class="menu-title">Menu</h3>
+        <!-- <ul class="header-list">
           <li class="header-item">
             <a href="#about-me">About me</a>
           </li>
@@ -46,10 +47,10 @@
           <li class="header-item">
             <a href="#faq">FAQ</a>
           </li>
-        </ul>
+        </ul> -->
 
         <button
-          class="header-burger js-open-menu"
+          class="header-burger js-open-menu menu-toggle"
           type="button"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -57,6 +58,10 @@
           <svg class="header-burger-icon" width="28" height="28">
             <use href="/project-SevenTeam17/assets/sprite-9e15d144.svg#icon-menu"></use>
           </svg>
+        </button>
+
+        <button type="button" class="header-order-btn-td">
+          <a href="#work-with-me" class="link">Order the project</a>
         </button>
       </nav>
     </div>
@@ -70,7 +75,7 @@
     </button>
 
     <ul class="mobile-menu">
-      <li class="mobile-item link current">
+      <li class="mobile-item link">
         <a href="#about-me">About me</a>
       </li>
       <li class="mobile-item link">
@@ -85,7 +90,7 @@
     </ul>
 
     <button type="button" class="header-order-btn">
-      <a href="#work-with-me" class="link">Order the project</a>
+      <a href="#work-with-me">Order the project</a>
     </button>
   </div>
 </section>
