@@ -11,6 +11,13 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
+
+  margin-top: 34px;
+  margin-bottom: 34px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .footer-span {
@@ -28,6 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
   margin-top: 64px;
 }
 
@@ -72,6 +80,7 @@
   letter-spacing: -0.02em;
   border: none;
   color: #fafafa;
+
   margin-top: 16px;
 }
 
@@ -179,23 +188,28 @@
   .footer-form-btn {
     margin-left: 54px;
   }
+
+  .footer-header {
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
 }
 
 /* Modal window styles */
 .button-close-modal {
-    fill: #fafafa;
+  fill: #fafafa;
 }
 
 .modal {
-    background-color: #1c1d20;
-    height: 246px;
-    width: 492px;
+  background-color: #1c1d20;
+  height: 246px;
+  width: 492px;
 }
 
 .modal-text {
-    color: azure;
-    text-align: center;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    font-weight: 500;
+  color: azure;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
