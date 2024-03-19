@@ -6,6 +6,7 @@
         background-size: cover;
         min-width: 374px;
         max-width: 375px;
+        padding: 0 16px;
 
     }
 
@@ -94,6 +95,7 @@
 
         background-image: url(../img/hero/hero-background@1xmob.png);
         background-size: cover;
+        padding: 0 16px;
 
     }
 
