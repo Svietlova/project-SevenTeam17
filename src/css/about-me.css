@@ -255,8 +255,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 64px;
-    padding-right: 64px;
+    margin: 0;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .description-about-me {
@@ -267,7 +268,7 @@
   }
 
   .description-my-work {
-    width: 576px;
+    /* width: 704px; */
     display: flex;
     padding: 64px 64px 436px 64px;
     justify-content: center;
