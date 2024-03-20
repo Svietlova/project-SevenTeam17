@@ -40,9 +40,9 @@ btnNext.addEventListener('click', () => {
 });
 
 
-const swiperBox = document.querySelector('.swiper-wrapper');
+const swiperBox = document.querySelector('.projects_wrapper');
 const projectsImg = `
-  <div class="swiper-slide" id=1>
+  <div class="swiper-slide projects-slide" id=1>
     <img
       class="projects_image" 
       srcset="
@@ -56,7 +56,7 @@ const projectsImg = `
       alt="Read Jorney App"
     />
   </div>
-  <div class="swiper-slide" id="2">
+  <div class="swiper-slide projects-slide" id="2">
           <img
             class="projects_image"
             srcset="
@@ -70,7 +70,7 @@ const projectsImg = `
             alt="Pet Love App"
           />
         </div>
-  <div class="swiper-slide" id=3>
+  <div class="swiper-slide projects-slide" id=3>
     <img
       class="projects_image" 
       srcset="
@@ -89,7 +89,7 @@ swiperBox.insertAdjacentHTML('beforeend', projectsImg);
 
 
 
-const slides = document.querySelectorAll('.swiper-slide');
+const slides = document.querySelectorAll('.projects-slide');
 const swiperBtnRight = document.querySelector('.projects_slider_btn--right');
 const swiperBtnLeft = document.querySelector('.projects_slider_btn--left');
 
