@@ -68,7 +68,9 @@ function validation(form) {
   return result;
 }
 
+
 const footerForm = document.querySelector('.footer-form');
+
 
 footerForm.addEventListener('submit', event => {
   event.preventDefault();
