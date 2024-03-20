@@ -70,7 +70,21 @@
     height: 19px;
 }
 
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .menu-title {
+    margin-top: 16px;
+    width: 60px;
+    height: 39px;
+    padding: 10px;
+    margin: 0;
+
+    background-color: transparent;
+    border: none;
     color: #fafafa;
     font-family: 'Inter Tight';
     font-weight: 500;
@@ -79,7 +93,6 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
 
-    margin-top: 16px;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -91,9 +104,11 @@
 .header-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .header-list {
         display: none;
     }
@@ -105,6 +120,9 @@
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
+    
+
+    margin-bottom: 8px;
 }
 
 .header-item:hover,
