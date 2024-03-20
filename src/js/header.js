@@ -1,5 +1,9 @@
 console.log("header");
-
+/**
+  |============================
+  | Mobile menu
+  |============================
+*/
 (() => {
     const mobileMenu = document.querySelector('.js-menu-container');
     const openMenuBtn = document.querySelector('.js-open-menu');
@@ -33,3 +37,17 @@ console.log("header");
     });
   })();
   
+  /**
+    |============================
+    | Tablet/desctop menu
+    |============================
+  */
+
+const tabMenu = document.querySelector('.menu-title');
+tabMenu.addEventListener('click', () => {
+  let tabMenuList = document.querySelector('.header-list');
+  tabMenuList.classList.toggle('hidden');
+
+});
+
+// .classList.toggle('hidden');
