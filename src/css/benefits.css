@@ -69,7 +69,6 @@
 
   @media screen and (min-width: 768px) {
     .benefits_container {
-      max-width: 704px;
       padding-left: 32px;
       padding-right: 32px;
     }
