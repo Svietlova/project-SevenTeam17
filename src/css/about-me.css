@@ -1,8 +1,5 @@
-/* .about-me-acc-sec {
-  cursor: pointer;
-} */
-
 /* ----------------------------------old style------------------------ */
+
 .container-about-me {
   max-width: 343px;
   display: flex;
@@ -43,7 +40,7 @@
   background: #242527;
   color: #fafafa;
   font-family: 'Inter Tight';
-  font-size: 24px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -86,6 +83,12 @@
   align-items: flex-start;
   gap: 32px;
 }
+
+/**
+  |============================
+  | Стили Даскаль
+  |============================
+*/
 
 .ac-about {
   width: 343px;
@@ -138,8 +141,8 @@
   padding: 0 25px 0 0;
 }
 
-.ac-triggern .ac-icon:nth-child(1)::after,
-.ac-triggern .ac-icon:nth-child(1)::before {
+.ac-trigger .ac-icon:nth-child(1)::after,
+.ac-trigger .ac-icon:nth-child(1)::before {
   content: '';
   display: block;
   position: absolute;
@@ -150,12 +153,12 @@
   background: #fafafa;
 }
 
-.ac-triggern .ac-icon:nth-child(1)::after {
+.ac-trigger .ac-icon:nth-child(1)::after {
   transform: rotate(135deg);
   margin-left: 7px;
 }
 
-.ac-triggern .ac-icon:nth-child(1)::before {
+.ac-trigger .ac-icon:nth-child(1)::before {
   transform: rotate(-135deg);
 }
 
@@ -188,6 +191,12 @@
 .ac-panel-about.active {
   display: flex;
 }
+
+/**
+  |============================
+  | Стили Даскаль
+  |============================
+*/
 
 .swiper-about {
   display: flex;
@@ -374,8 +383,8 @@
     padding: 0 25px 0 0;
   }
 
-  .ac-triggern .ac-icon:nth-child(1)::after,
-  .ac-triggern .ac-icon:nth-child(1)::before {
+  .ac-trigger .ac-icon:nth-child(1)::after,
+  .ac-trigger .ac-icon:nth-child(1)::before {
     content: '';
     display: block;
     position: absolute;
@@ -386,12 +395,12 @@
     background: #fafafa;
   }
 
-  .ac-triggern .ac-icon:nth-child(1)::after {
+  .ac-trigger .ac-icon:nth-child(1)::after {
     transform: rotate(135deg);
     margin-left: 7px;
   }
 
-  .ac-triggern .ac-icon:nth-child(1)::before {
+  .ac-trigger .ac-icon:nth-child(1)::before {
     transform: rotate(-135deg);
   }
 
@@ -615,8 +624,8 @@
     padding: 0 25px 0 0;
   }
 
-  .ac-triggern .ac-icon:nth-child(1)::after,
-  .ac-triggern .ac-icon:nth-child(1)::before {
+  .ac-trigger .ac-icon:nth-child(1)::after,
+  .ac-trigger .ac-icon:nth-child(1)::before {
     content: '';
     display: block;
     position: absolute;
@@ -627,12 +636,12 @@
     background: #fafafa;
   }
 
-  .ac-triggern .ac-icon:nth-child(1)::after {
+  .ac-trigger .ac-icon:nth-child(1)::after {
     transform: rotate(135deg);
     margin-left: 7px;
   }
 
-  .ac-triggern .ac-icon:nth-child(1)::before {
+  .ac-trigger .ac-icon:nth-child(1)::before {
     transform: rotate(-135deg);
   }
 
@@ -726,3 +735,7 @@
     stroke: #3b3b3b;
   }
 }
+
+/* .about-me-acc-sec {
+  cursor: pointer;
+} */
