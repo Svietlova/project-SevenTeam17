@@ -14,9 +14,9 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-SevenTeam17/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/project-SevenTeam17/assets/vendor-f0d653de.js">
+    <link rel="modulepreload" crossorigin href="/project-SevenTeam17/assets/vendor-7e83206a.js">
     <link rel="stylesheet" href="/project-SevenTeam17/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/project-SevenTeam17/assets/index-9491d6f9.css">
+    <link rel="stylesheet" href="/project-SevenTeam17/assets/index-1b27a2df.css">
   </head>
   <body>
     <section>
@@ -243,17 +243,23 @@
   </ul>
 
   <div class="swiper-about">
-    <ul class="swiper-slide-about-list">
-      <li class="swiper-slide-about">HTML/CSS</li>
-      <li class="swiper-slide-about">JavaScript</li>
-      <li class="swiper-slide-about">React</li>
-      <li class="swiper-slide-about">Node.js</li>
-      <li class="swiper-slide-about">React Native</li>
-      <li class="swiper-slide-about">Soft Skills</li>
-      <li class="swiper-slide-about">Git</li>
-    </ul>
-    <div class="swiper-button-next-about"></div>
-    <div class="swiper-scrollbar-about"></div>
+    <div class="about-swiper-around">
+        <div class="about-swiper-container">
+            <ul class="swiper-wrapper list-skills">
+                <li class="swiper-slide about-swiper-items  active">HTML/CSS</li>
+                <li class="swiper-slide about-swiper-items">JavaScript</li>
+                <li class="swiper-slide about-swiper-items">React</li>
+                <li class="swiper-slide about-swiper-items">Node.js</li>
+                <li class="swiper-slide about-swiper-items">React Native</li>
+                <li class="swiper-slide about-swiper-items">Soft skills</li>
+            </ul>
+        </div>
+       <button class="about-swiper-button" type="button">
+         <svg class="mobile-next-slider" width="28" height="28">
+            <use href="/project-SevenTeam17/assets/sprite-8a6ac60d.svg#icon-arrow-right"></use>
+         </svg>
+       </button>
+    </div>
   </div>
 </section>
 
