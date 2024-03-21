@@ -1,9 +1,9 @@
-console.log("header");
 /**
   |============================
   | Mobile menu
   |============================
 */
+
 (() => {
     const mobileMenu = document.querySelector('.js-menu-container');
     const openMenuBtn = document.querySelector('.js-open-menu');
@@ -49,5 +49,3 @@ tabMenu.addEventListener('click', () => {
   tabMenuList.classList.toggle('hidden');
 
 });
-
-// .classList.toggle('hidden');
