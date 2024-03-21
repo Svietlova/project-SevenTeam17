@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+  <symbol id="icon-fav-j" viewBox="0 0 32 32">
+      <path fill="#1c1d20" d="M6.667 0h18.667a6.667 6.667 0 0 1 6.667 6.667v18.667a6.667 6.667 0 0 1-6.667 6.667H6.667A6.667 6.667 0 0 1 0 25.334V6.667A6.667 6.667 0 0 1 6.667 0z" style="fill:var(--color1, #1c1d20)"/>
+      <path fill="#fafafa" d="M12.432 20.797a3.613 3.613 0 0 1-1.484-.293c-.438-.2-.786-.49-1.042-.872s-.384-.846-.384-1.393v-.189h1.452v.189c0 .265.061.497.182.697.126.2.297.354.514.462.221.104.475.156.762.156.308 0 .571-.065.788-.195s.382-.321.495-.573c.113-.256.169-.569.169-.937v-6.882h1.452v6.882c0 .621-.119 1.152-.358 1.595a2.415 2.415 0 0 1-1.003 1.009c-.434.23-.948.345-1.543.345zm6.101-4.375.091-1.999-1.68 1.087-.521-.898 1.784-.911-1.784-.911.521-.911 1.68 1.087-.091-1.999h1.029l-.091 1.999 1.68-1.087.521.911-1.784.911 1.784.911-.521.898-1.68-1.087.091 1.999h-1.029z" style="fill:var(--color2, #fafafa)"/>
+    </symbol>
   <!-- svg-icons WITH color #fafafa -->
     <symbol id="icon-arrow-down" viewBox="0 0 32 32">
       <path fill="none" stroke="#fafafa" stroke-width=".762" d="M16 .381C24.626.381 31.619 7.374 31.619 16S24.626 31.619 16 31.619.381 24.626.381 16 7.374.381 16 .381z" style="stroke:var(--color1, #fafafa)"/>
@@ -8,6 +12,12 @@
     <symbol id="icon-arrow-up" viewBox="0 0 32 32">
       <path fill="none" stroke="#fafafa" stroke-width=".762" d="M16 31.619c8.626 0 15.619-6.993 15.619-15.619S24.626.381 16 .381.381 7.374.381 16 7.374 31.619 16 31.619z" style="stroke:var(--color1, #fafafa)"/>
       <path fill="none" stroke="#fafafa" stroke-width="1.524" d="M19.81 17.905 16 14.095l-3.81 3.81" style="stroke:var(--color1, #fafafa)"/>
+    </symbol>
+    <symbol id="icon-down" viewBox="0 0 48 32">
+      <path fill="none" stroke="#fafafa" stroke-width="8" d="M44 6 24 26 4 6" style="stroke:var(--color1, #fafafa)"/>
+    </symbol>
+    <symbol id="icon-up" viewBox="0 0 48 32">
+      <path fill="none" stroke="#fafafa" stroke-width="8" d="M44 26 24 6 4 26" style="stroke:var(--color1, #fafafa)"/>
     </symbol>
     <symbol id="icon-user" viewBox="0 0 32 32">
       <path fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M26.667 28c0-1.861 0-2.791-.23-3.548a5.333 5.333 0 0 0-3.556-3.556c-.757-.23-1.687-.23-3.548-.23h-6.667c-1.861 0-2.791 0-3.548.23a5.335 5.335 0 0 0-3.556 3.556c-.23.757-.23 1.687-.23 3.548M16 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" style="stroke:var(--color1, #fafafa)"/>
