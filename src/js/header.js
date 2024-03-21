@@ -43,7 +43,8 @@
   */
 
 const tabMenu = document.querySelector('.menu-title');
-tabMenu.addEventListener('click', () => {
+tabMenu.addEventListener('click', (e) => {
+  e.preventDefault();
   let tabMenuList = document.querySelector('.header-list');
   tabMenuList.classList.toggle('hidden');
 
