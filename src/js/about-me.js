@@ -1,24 +1,46 @@
-import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
+'use strict';
+/**
+  |============================
+  | Accordion 'About-me' section
+  |============================
+*/
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+const accordionPanels = document.querySelector('.accordion-panel');
+const firstContainer = document.querySelector('.about-ac');
+const firstIcon = document.querySelector('.mobile-open-ac');
 
-new Accordion('.about-me-acc-sec');
+accordionPanels.style.maxHeight = '100%';
+firstContainer.classList.add('active');
+firstIcon.style.transform = 'rotate(180deg)';
 
-import Swiper from 'swiper';
-import 'swiper/css';
-import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', function () {
+    const accordionItem = this.closest('.about-ac');
+    const panel = accordionItem.querySelector('.accordion-panel');
+    const icon = this.querySelector('.mobile-open-ac');
 
-document.querySelector('.about-swiper-button').addEventListener('click', () => {
-    const activeSlide = document.querySelector('.swiper-slide.active');
-    const nextSlide = activeSlide.nextElementSibling;
-    if (nextSlide) {
-      activeSlide.classList.remove('active');
-      nextSlide.classList.add('active');
+    accordionItem.classList.toggle('active');
+
+    if (accordionItem.classList.contains('active')) {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      icon.style.transform = 'rotate(180deg)';
     } else {
-      const firstSlide = document.querySelector('.swiper-slide');
-      activeSlide.classList.remove('active');
-      firstSlide.classList.add('active');
+      panel.style.maxHeight = '0';
+      icon.style.transform = 'rotate(0deg)';
     }
   });
+});
+
+  /**
+    |============================
+    | Swiper 'About-me' section
+    |============================
+  */
+
+  import Swiper from 'swiper';
+  import 'swiper/css';
+  import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+  
   const swiperAbout = new Swiper('.about-swiper-container', {
     loop: true,
     setWrapperSize: true,
