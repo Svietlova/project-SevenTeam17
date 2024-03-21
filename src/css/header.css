@@ -229,7 +229,7 @@
     height: 100vh;
     background-image: url(../img/hero/hero-background@1xmob.png);
     background-size: cover;
-    min-width: 320px;
+    /* min-width: 320px; */
     z-index: 999;
 
     transform: translateX(100%);
