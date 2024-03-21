@@ -95,15 +95,10 @@
 
 .projects_box {
   box-sizing: border-box;
-  padding: 100px 16px;
   background: rgba(36, 37, 39, 1);
   overflow: hidden;
 
-  @media (min-width: 768px) {
-    padding: 120px 45px;
-  }
   @media (min-width: 1440px) {
-    padding: 120px 37px;
     margin: 0;
     min-width: 50%;
   }
