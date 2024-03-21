@@ -22,7 +22,7 @@ const btnNext = document.querySelector('.projects_slider_btn--right');
 const btnPrev = document.querySelector('.projects_slider_btn--left');
 
 
-const swiper = new Swiper('.projects_image_box', {
+const swiper = new Swiper('.projects_box', {
   speed: 400,
   spaceBetween: 100,
 });
@@ -41,7 +41,25 @@ btnNext.addEventListener('click', () => {
 
 const swiperBox = document.querySelector('.projects_wrapper');
 const projectsImg = `
-  <div class="swiper-slide projects-slide" id=1>
+  <li class="swiper-slide projects-slide" id=1>
+    <div class="projects_description_box">
+        <ul class="projects_tag_list">
+          <li class="projects_tag">#react</li>
+          <li class="projects_tag">#js</li>
+          <li class="projects_tag">#node js</li>
+          <li class="projects_tag">#git</li>
+        </ul>
+        <p class="projects_description">
+          Programming Across <br />Borders: Ideas,<br />Technologies,
+          Innovations
+        </p>
+        <a
+          href="https://svietlova.github.io/project-SevenTeam17/"
+          target="_blank"
+        >
+          <button class="projects_description_btn">See projects</button>
+        </a>
+    </div>
     <img
       class="projects_image" 
       srcset="
@@ -54,8 +72,26 @@ const projectsImg = `
       src="${p121}"
       alt="Read Jorney App"
     />
-  </div>
-  <div class="swiper-slide projects-slide" id="2">
+  </li>
+  <li class="swiper-slide projects-slide" id="2">
+    <div class="projects_description_box">
+        <ul class="projects_tag_list">
+          <li class="projects_tag">#react</li>
+          <li class="projects_tag">#js</li>
+          <li class="projects_tag">#node js</li>
+          <li class="projects_tag">#git</li>
+        </ul>
+        <p class="projects_description">
+          Programming Across <br />Borders: Ideas,<br />Technologies,
+          Innovations
+        </p>
+        <a
+          href="https://svietlova.github.io/project-SevenTeam17/"
+          target="_blank"
+        >
+          <button class="projects_description_btn">See projects</button>
+        </a>
+    </div>
           <img
             class="projects_image"
             srcset="
@@ -68,8 +104,26 @@ const projectsImg = `
             src="${p221}"
             alt="Pet Love App"
           />
-        </div>
-  <div class="swiper-slide projects-slide" id=3>
+  </li>
+  <li class="swiper-slide projects-slide" id=3>
+   <div class="projects_description_box">
+        <ul class="projects_tag_list">
+          <li class="projects_tag">#react</li>
+          <li class="projects_tag">#js</li>
+          <li class="projects_tag">#node js</li>
+          <li class="projects_tag">#git</li>
+        </ul>
+        <p class="projects_description">
+          Programming Across <br />Borders: Ideas,<br />Technologies,
+          Innovations
+        </p>
+        <a
+          href="https://svietlova.github.io/project-SevenTeam17/"
+          target="_blank"
+        >
+          <button class="projects_description_btn">See projects</button>
+        </a>
+    </div>
     <img
       class="projects_image" 
       srcset="
@@ -82,7 +136,7 @@ const projectsImg = `
       src="${p321}"
       alt="Vocab Builder App"
     />
-  </div>`
+  </li>`
 
 swiperBox.insertAdjacentHTML('beforeend', projectsImg);
 
