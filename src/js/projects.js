@@ -1,5 +1,4 @@
-console.log("projects");
-
+`use strict`;
 import Swiper from 'swiper';
 import '../../node_modules/swiper/swiper.css';
 

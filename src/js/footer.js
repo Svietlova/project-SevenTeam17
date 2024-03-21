@@ -1,7 +1,4 @@
-console.log('work together');
-
-// import imgLogo from '../img/header-footer/jeff-logo.png';
-// import sprite from '../img/sprite.svg';
+`use strict`;
 
 function removeSuccess(input) {
   const parent = input.parentNode;
