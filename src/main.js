@@ -7,6 +7,3 @@ import '../src/js/faq';
 import '../src/js/covers';
 import '../src/js/reviews';  
 import '../src/js/footer';
-
-
-// import 'accordion-js/dist/accordion.min.css';
