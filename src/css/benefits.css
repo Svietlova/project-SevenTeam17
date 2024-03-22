@@ -28,6 +28,7 @@
     flex-direction: column;
     min-width: auto;
     gap: 16px;
+    margin-bottom: 48px;
   }
   .benefits_item {
     padding: 24px;
@@ -53,6 +54,7 @@
   .benefits_btn_link {
     letter-spacing: -0.02em;
     color: #fafafa;
+    margin-top: 32px;
   }
   .benefits_btn {
     border: 1px solid rgba(250, 250, 250, 0.2);
@@ -60,7 +62,7 @@
     padding: 18px 36px;
     width: 187px;
     background-color: #1c1d20;
-    margin-top: 32px;
+
   }
   
   .benefits_btn:hover,
@@ -79,9 +81,9 @@
       padding-top: 48px;
       padding-bottom: 48px;
     }
-    .benefits_btn {
+    /* .benefits_btn {
       margin-top: 64px;
-    }
+    } */
   
     .benefits_menu {
       width: 704px;
@@ -89,6 +91,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap: 16px 16px;
+      margin-bottom: 96px;
     }
     .benefits_item {
       width: 344px;
