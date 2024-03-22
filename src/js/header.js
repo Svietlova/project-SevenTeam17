@@ -10,7 +10,7 @@
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');
     const menuLinks = document.querySelector(".mobile-menu");
-    const orderBtn = document.querySelector(".header-order-btn");
+    const orderBtn = document.querySelector(".header-order-link");
   
     const toggleMenu = () => {
       const isMenuOpen =
