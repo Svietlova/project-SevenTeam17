@@ -1,114 +1,73 @@
-function removeError(input) {
-  const parent = input.parentNode;
-  if (parent.classList.contains('error')) {
-    parent.querySelector('.error-label').remove();
-    parent.classList.remove('error');
-  }
-}
+'use strict';
 
-function createError(input, text) {
-  const parent = input.parentNode;
-  const errorLabel = document.createElement('label');
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
-  errorLabel.classList.add('error-label');
+const form = document.querySelector('.footer-form');
 
-  errorLabel.textContent = text;
-
-  parent.append(errorLabel);
-  parent.classList.add('error');
-}
-
-function removeSuccess(input) {
-  const parent = input.parentNode;
-  if (parent.classList.contains('success')) {
-    parent.querySelector('.success-label').remove();
-    parent.classList.remove('success');
-  }
-}
-
-function createSuccess(input) {
-  const parent = input.parentNode;
-  const successLabel = document.createElement('label');
-
-  successLabel.classList.add('success-label');
-
-  successLabel.textContent = 'Success';
-
-  removeSuccess(input); // Удаляем метку "Success" перед добавлением новой
-  parent.append(successLabel);
-  parent.classList.add('success');
-}
-
-function validation(form) {
-  function removeError(input) {
-    const parent = input.parentNode;
-    if (parent.classList.contains('error')) {
-      parent.querySelector('.error-label').remove();
-      parent.classList.remove('error');
-    }
-  }
-
-  function createError(input, text) {
-    const parent = input.parentNode;
-    const errorLabel = document.createElement('label');
-
-    errorLabel.classList.add('error-label');
-
-    errorLabel.textContent = text;
-
-    parent.append(errorLabel);
-    parent.classList.add('error');
-  }
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  let result = true;
-
-  form.querySelectorAll('input').forEach(input => {
-    if (input.dataset.required == 'true') {
-      if (input.value == '') {
-        removeError(input);
-        removeSuccess(input);
-        createError(input, 'This field is required');
-        result = false;
-      } else if (input.type === 'email' && !emailRegex.test(input.value)) {
-        removeError(input);
-        removeSuccess(input);
-        createError(input, 'Invalid email, try again');
-        result = false;
-      } else {
-        removeError(input);
-        createSuccess(input);
-      }
-    }
-  });
-
-  return result;
-}
-
-footerForm = document.querySelector('.footer-form');
-
-footerForm.addEventListener('submit', event => {
+form.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  if (validation(footerForm) == true) {
-    const formData = new FormData(footerForm);
+  const footerModal = document.querySelector('.footer-modal-background');
+  const footerSuccess = document.querySelector('.footer-input-success-message');
+  const footerError = document.querySelector('.footer-input-error-message');
+  const email = document.getElementById('email');
+  const comment = document.getElementById('comment');
 
-    fetch('https://jsonplaceholder.typicode.com/users', {
-      // Замените "your_unique_id" на ваш уникальный идентификатор из RequestBin
-      method: 'POST',
-      body: formData,
+  email.classList.remove('footer-input-error');
+  footerError.style.display = 'none';
+
+  const data = {
+    email: email.value,
+    comment: comment.value,
+  };
+
+  fetch('https://portfolio-js.b.goit.study/api/requests', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+    .then(response => {
+      if (response.ok) {
+        footerModal.classList.add('footer-modal-is-open');
+
+        const closeButton = document.querySelector('.footer-modal-btn');
+        closeButton.addEventListener('click', function () {
+          footerModal.classList.remove('footer-modal-is-open');
+        });
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            footerModal.classList.remove('footer-modal-is-open');
+          }
+        });
+        footerModal.addEventListener('click', function (event) {
+          if (event.target === footerModal) {
+            footerModal.classList.remove('footer-modal-is-open');
+          }
+        });
+        email.classList.add('footer-input-success');
+        footerSuccess.style.display = 'block';
+        setTimeout(function () {
+          footerSuccess.style.display = 'none';
+          email.classList.remove('footer-input-success');
+        }, 10000);
+        form.reset();
+      } else {
+        iziToast.error({
+          title: 'Oops!',
+          message: 'Please, enter a valid email address',
+        });
+        email.classList.add('footer-input-error');
+        footerError.style.display = 'block';
+      }
+      return response.json();
     })
-      .then(response => {
-        if (response.ok) {
-          alert('Form submitted successfully');
-        } else {
-          alert('Error submitting form');
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert('Error submitting form');
-      });
-  }
+    .then(data => {
+      return data;
+    })
+    .catch(error => {
+      return error;
+    });
 });

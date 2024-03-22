@@ -1,53 +1,100 @@
-<footer class="footer" id="work-with-me">
-  <h2 class="footer-header">
-    <img class="footer-img" src="./img/header-footer/jeff-logo.png" alt="*" />
-    let's <span class="footer-span">work</span> together
-  </h2>
+<section id="work-with-me" class="footer">
+  <div class="container footer-container">
+    <div class="footer-content-wrapper">
+      <div class="footer-headline">
+        <div class="footer-logo-tagline">
+          <img
+            class="footer-headline-img"
+            srcset="
+              ./images/together/together-mobile@1x.webp  44w,
+              ./images/together/together-tablet@1x.webp  70w,
+              ./images/together/together-mobile@2x.webp  88w,
+              ./images/together/together-tablet@2x.webp 140w,
+              ./images/together/together-mobile@3x.webp 132w,
+              ./images/together/together-tablet@3x.webp 210w,
+              ./images/together/together-mobile@1x.jpg   44w,
+              ./images/together/together-tablet@1x.jpg   70w,
+              ./images/together/together-mobile@2x.jpg   88w,
+              ./images/together/together-tablet@2x.jpg  140w,
+              ./images/together/together-mobile@3x.jpg  132w,
+              ./images/together/together-tablet@3x.jpg  210w
+            "
+            sizes="(min-width: 768px) 70px, (max-width: 767px) 44px"
+            src="./images/together/together-mobile@1x.jpg"
+            alt="logo"
+            loading="lazy"
+          />
+          <h2 class="footer-headline-tagline">
+            Let&#8217;s <span class="footer-headline-span">work</span>
+          </h2>
+        </div>
 
-  <form class="footer-form">
-    <div class="input-box">
-      <input
-        class="footer-form-input"
-        type="email"
-        placeholder="clients@gmail.com"
-        data-required="true"
-      />
+        <span class="footer-headline-tagline">together</span>
+      </div>
+
+      <form class="footer-form">
+        <div class="footer-input-box">
+          <input
+            class="footer-form-item footer-form-input"
+            type="email"
+            id="email"
+            required
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            placeholder="clients@gmail.com"
+            autocomplete="off"
+          />
+          <p class="footer-input-error-message">Invalid email, try again</p>
+          <p class="footer-input-success-message">Succes!</p>
+        </div>
+
+        <textarea
+          class="footer-form-item footer-form-textarea"
+          id="comment"
+          required
+          placeholder="comments"
+        ></textarea>
+        <button
+          class="footer-form-button"
+          name="form-submit-button"
+          type="submit"
+        >
+          Send
+        </button>
+      </form>
+
+      <address class="footer-address">
+        <a
+          class="footer-addres-mail footer-addres-item"
+          href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
+        <a
+          class="footer-addres-tel footer-addres-item"
+          href="tel:+3801111111111"
+          >+380 11 1111 11 11</a
+        >
+      </address>
     </div>
-    <div class="input-box">
-      <input
-        data-required="true"
-        class="footer-form-input"
-        type="text"
-        placeholder="comments"
-      />
-    </div>
-
-    <button class="footer-form-btn" type="submit">Send</button>
-  </form>
-
-  <nav class="footer-nav">
-    <ul class="footer-contacts">
-      <li class="footer-li">
-        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-      </li>
-      <li class="footer-li">
-        <a href="tel:+3801111111111">+380 11 1111 11 11</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="backdrop-is-open">
-    <div class="modal">
-      <button class="button-close-modal" type="button">
-        <svg class="x-close" height="24" width="24">
-          <use href="./img/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-      <h3 class="modal-heading">Thankyou for your interest in cooperation!</h3>
+  </div>
+</section>
+<div class="footer-modal-background">
+  <div class="footer-modal">
+    <button class="footer-modal-btn" type="button">
+      <svg
+        class="footer-modal-btn-icon"
+        aria-label="icon-close-button"
+        width="22"
+        height="22"
+      >
+        <use href="./img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="footer-modal-container">
+      <h2 class="modal-tagline">Thank you for your interest in cooperation!</h2>
       <p class="modal-text">
         The manager will contact you shortly to discuss further details and
         opportunities for cooperation. Please stay in touch.
       </p>
     </div>
   </div>
-</footer>
+</div>
