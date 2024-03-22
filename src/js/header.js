@@ -47,5 +47,4 @@ tabMenu.addEventListener('click', (e) => {
   e.preventDefault();
   let tabMenuList = document.querySelector('.header-list');
   tabMenuList.classList.toggle('hidden');
-
 });

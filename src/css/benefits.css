@@ -26,6 +26,7 @@
   .benefits_menu {
     display: flex;
     flex-direction: column;
+    min-width: auto;
     gap: 16px;
   }
   .benefits_item {
@@ -62,9 +63,10 @@
     margin-top: 32px;
   }
   
-  .benefits_btn:hover {
+  .benefits_btn:hover,
+  .benefits_btn:focus {
     transform: scale(1.1);
-    background-color: #242527;
+    background-color: #ed3b44;
   }
 
   @media screen and (min-width: 768px) {

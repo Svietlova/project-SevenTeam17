@@ -121,7 +121,6 @@
 }
 
 .projects_image {
-  /* display: inline; */
   height: fit-content;
 
   @media (min-width: 1440px) {

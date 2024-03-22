@@ -87,9 +87,6 @@
     color: #ed3b44;
 }
 
-.menu-title:active {
-
-}
 
 @media only screen and (max-width: 767.98px) {
     .menu-title {
@@ -171,10 +168,6 @@
     background-color: #e0373f;
 }
 
-.header-order-btn-td:active {
-    background-color: #e0373f;
-}
-
 @media only screen and (max-width: 767.98px) {
     .header-order-btn-td {
         display: none;
@@ -229,11 +222,18 @@
     height: 100vh;
     background-image: url(../img/hero/hero-background@1xmob.png);
     background-size: cover;
-    /* min-width: 320px; */
     z-index: 999;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+    .menu-contain {
+        background-image: url(../img/hero/hero-background@2xmob.png);
+        background-size: cover;
+    }
 }
 
 .menu-container.is-open {
@@ -268,6 +268,7 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
+
 .mobile-item:hover,
 .mobile-item:focus {
     color: #ed3b44;

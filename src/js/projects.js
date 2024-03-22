@@ -170,5 +170,3 @@ function disableBtn() {
     swiperBtnLeft.setAttribute("disbled", "true");
   }
 }
-
-
