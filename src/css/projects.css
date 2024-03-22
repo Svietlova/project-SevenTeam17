@@ -39,6 +39,8 @@
 
 .projects_tag_list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 6px;
 }
 
