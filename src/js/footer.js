@@ -1,4 +1,22 @@
-`use strict`;
+function removeError(input) {
+  const parent = input.parentNode;
+  if (parent.classList.contains('error')) {
+    parent.querySelector('.error-label').remove();
+    parent.classList.remove('error');
+  }
+}
+
+function createError(input, text) {
+  const parent = input.parentNode;
+  const errorLabel = document.createElement('label');
+
+  errorLabel.classList.add('error-label');
+
+  errorLabel.textContent = text;
+
+  parent.append(errorLabel);
+  parent.classList.add('error');
+}
 
 function removeSuccess(input) {
   const parent = input.parentNode;
@@ -29,6 +47,7 @@ function validation(form) {
       parent.classList.remove('error');
     }
   }
+
   function createError(input, text) {
     const parent = input.parentNode;
     const errorLabel = document.createElement('label');
@@ -49,10 +68,12 @@ function validation(form) {
     if (input.dataset.required == 'true') {
       if (input.value == '') {
         removeError(input);
+        removeSuccess(input);
         createError(input, 'This field is required');
         result = false;
       } else if (input.type === 'email' && !emailRegex.test(input.value)) {
         removeError(input);
+        removeSuccess(input);
         createError(input, 'Invalid email, try again');
         result = false;
       } else {
@@ -65,14 +86,29 @@ function validation(form) {
   return result;
 }
 
-
-const footerForm = document.querySelector('.footer-form');
-
+footerForm = document.querySelector('.footer-form');
 
 footerForm.addEventListener('submit', event => {
   event.preventDefault();
 
   if (validation(footerForm) == true) {
-    console.log('Form validated successfully');
+    const formData = new FormData(footerForm);
+
+    fetch('https://jsonplaceholder.typicode.com/users', {
+      // Замените "your_unique_id" на ваш уникальный идентификатор из RequestBin
+      method: 'POST',
+      body: formData,
+    })
+      .then(response => {
+        if (response.ok) {
+          alert('Form submitted successfully');
+        } else {
+          alert('Error submitting form');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Error submitting form');
+      });
   }
 });
