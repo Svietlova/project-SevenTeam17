@@ -32,7 +32,7 @@
   }
 }
 .projects_tag_list {
-  display: flexbox;
+  display: flex;
   gap: 6px;
 }
 .projects_tag {
