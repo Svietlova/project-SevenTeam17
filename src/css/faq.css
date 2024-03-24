@@ -44,7 +44,6 @@
 
 .faq-item .faq-header {
     margin: 0;
-    padding-right: 54px;
 }
 
 .faq-item:nth-child(6) .faq-header {
@@ -93,6 +92,10 @@
     right: 0px;
 }
 
+.faq-item:nth-child(6) .faq-button::after {
+    right: -171px;
+}
+
 .faq-item .faq-container-text {
     overflow: hidden;
     transition-property: height, visibility;
@@ -132,7 +135,7 @@
     visibility: visible;
 }
 
-.faq-item.is-active>.faq-button::after {
+.faq-item.is-active>.faq-header .faq-button::after {
     content: url('../img/faq-arrow-up.svg');
 }
 
@@ -177,6 +180,10 @@
     .faq-item .faq-button::after {
         right: 0px;
     }
+    
+    .faq-item:nth-child(6) .faq-button::after {
+        right: -230px;
+    }
 
     .faq-item .faq-container-text .faq-text {
         padding-left: 0px;
@@ -187,8 +194,8 @@
         padding-left: 0px;
     }
 
-    .faq-item:nth-child(6) .faq-header {
-        padding-right: 219px;
+    .accordion-container li:nth-child(6) .faq-header {
+        padding-right: 230px;
     }
 
 }
@@ -224,14 +231,35 @@
         height: auto;
     }
 
+    .faq-button:nth-child(1){
+        padding-right: 60px;
+    }
+
+    .faq-item .faq-button {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .faq-item:nth-child(6) .faq-button::after {
+        right: 0px;
+    }
+
     .faq-text {
-        text-align: left;
         width: 343px;
         height: auto;
         padding-bottom: 20px;
     }
 
+    .faq-item .faq-container-text .faq-text {
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+
     .faq-item:nth-child(6) .faq-header {
         padding-right: 54px;
+    }
+
+    .accordion-container li:nth-child(6) .faq-header {
+        padding-right: 0px;
     }
 }
